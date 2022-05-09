@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流体布局</title>
+    <style>
+        /* 流体布局 */
+        .left {
+            width: 200px;
+            height: 300px;
+            float: left;
+            background-color: skyblue;
+        }
+
+        .right {
+            width: 200px;
+            height: 300px;
+            float: right;
+            background-color: skyblue;
+        }
+
+        .main {
+            margin-left: 220px;
+            margin-right: 220px;
+            height: 300px;
+            background-color: aqua;
+        }
+
+        /* 圣杯布局 */
+        .container2 {
+            margin-left: 120px;
+            margin-right: 220px;
+            margin-top: 20px;
+        }
+
+        .main2 {
+            float: left;
+            width: 100%;
+            height: 300px;
+            background: green;
+        }
+
+        .left2 {
+            position: relative;
+            left: -120px;
+            float: left;
+            height: 300px;
+            width: 100px;
+            margin-left: -100%;
+            background: red;
+        }
+
+        .right2 {
+            position: relative;
+            right: -220px;
+            float: right;
+            height: 300px;
+            width: 200px;
+            margin-left: -200px;
+            background: blue;
+        }
+
+        /* 双飞翼布局 */
+        .content3 {
+            float: left;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .main3 {
+            height: 200px;
+            margin-left: 110px;
+            margin-right: 220px;
+            background: green;
+        }
+
+        .main3::after {
+            content: '';
+            display: block;
+            font-size: 0;
+            height: 0;
+            zoom: 1;
+            clear: both;
+        }
+
+        .left3 {
+            float: left;
+            height: 200px;
+            width: 100px;
+            margin-left: -100%;
+            background: red;
+            margin-top: 30px;
+        }
+
+        .right3 {
+            float: right;
+            height: 200px;
+            width: 200px;
+            margin-left: -200px;
+            background: blue;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 流体布局 -->
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="main"></div>
+    </div>
+    <!-- 圣杯布局 -->
+    <div class="container2">
+        <div class="main2"></div>
+        <div class="left2"></div>
+        <div class="right2"></div>
+    </div>
+    <!-- 双飞翼布局 -->
+    <div class="content3">
+        <div class="main3"></div>
+       </div>
+       <div class="left3"></div>
+       <div class="right3"></div>
+       <!-- 自适应布局 -->
+       <div class="container4">
+        <div class="left4"></div>
+        <div class="right4">22222</div>
+    </div>
+
+    <script>
+        let obj = {a:1,b:2}
+        let num;
+        
+    </script>
+</body>
+
+</html>
